@@ -14,6 +14,10 @@
 		F4DBBC711B7B5811009C7505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DBBC701B7B5811009C7505 /* Images.xcassets */; };
 		F4DBBC741B7B5811009C7505 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DBBC721B7B5811009C7505 /* LaunchScreen.xib */; };
 		F4DBBC801B7B5811009C7505 /* weatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DBBC7F1B7B5811009C7505 /* weatherTests.m */; };
+		F4DBBC8A1B7B582B009C7505 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4DBBC891B7B582B009C7505 /* city.plist */; };
+		F4F115E61B7B65F5007639D1 /* WebGet.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F115E51B7B65F5007639D1 /* WebGet.m */; };
+		F4F115E91B7C38B4007639D1 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F115E81B7C38B4007639D1 /* DataService.m */; };
+		F4F115EC1B7C4CB4007639D1 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F115EB1B7C4CB4007639D1 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		F4DBBC791B7B5811009C7505 /* weatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DBBC7E1B7B5811009C7505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4DBBC7F1B7B5811009C7505 /* weatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherTests.m; sourceTree = "<group>"; };
+		F4DBBC891B7B582B009C7505 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = city.plist; sourceTree = "<group>"; };
+		F4DBBC8B1B7B5FFF009C7505 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		F4F115E41B7B65F5007639D1 /* WebGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebGet.h; sourceTree = "<group>"; };
+		F4F115E51B7B65F5007639D1 /* WebGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebGet.m; sourceTree = "<group>"; };
+		F4F115E71B7C38B4007639D1 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		F4F115E81B7C38B4007639D1 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		F4F115EA1B7C4CB4007639D1 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		F4F115EB1B7C4CB4007639D1 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +93,18 @@
 		F4DBBC621B7B5811009C7505 /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				F4DBBC8B1B7B5FFF009C7505 /* common.h */,
 				F4DBBC671B7B5811009C7505 /* AppDelegate.h */,
 				F4DBBC681B7B5811009C7505 /* AppDelegate.m */,
 				F4DBBC6A1B7B5811009C7505 /* ViewController.h */,
 				F4DBBC6B1B7B5811009C7505 /* ViewController.m */,
+				F4F115EA1B7C4CB4007639D1 /* Model.h */,
+				F4F115EB1B7C4CB4007639D1 /* Model.m */,
+				F4F115E41B7B65F5007639D1 /* WebGet.h */,
+				F4F115E51B7B65F5007639D1 /* WebGet.m */,
+				F4F115E71B7C38B4007639D1 /* DataService.h */,
+				F4F115E81B7C38B4007639D1 /* DataService.m */,
+				F4DBBC891B7B582B009C7505 /* city.plist */,
 				F4DBBC6D1B7B5811009C7505 /* Main.storyboard */,
 				F4DBBC701B7B5811009C7505 /* Images.xcassets */,
 				F4DBBC721B7B5811009C7505 /* LaunchScreen.xib */,
@@ -200,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4DBBC6F1B7B5811009C7505 /* Main.storyboard in Resources */,
+				F4DBBC8A1B7B582B009C7505 /* city.plist in Resources */,
 				F4DBBC741B7B5811009C7505 /* LaunchScreen.xib in Resources */,
 				F4DBBC711B7B5811009C7505 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4DBBC6C1B7B5811009C7505 /* ViewController.m in Sources */,
+				F4F115E91B7C38B4007639D1 /* DataService.m in Sources */,
+				F4F115E61B7B65F5007639D1 /* WebGet.m in Sources */,
+				F4F115EC1B7C4CB4007639D1 /* Model.m in Sources */,
 				F4DBBC691B7B5811009C7505 /* AppDelegate.m in Sources */,
 				F4DBBC661B7B5811009C7505 /* main.m in Sources */,
 			);
@@ -418,6 +442,7 @@
 				F4DBBC851B7B5811009C7505 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4DBBC861B7B5811009C7505 /* Build configuration list for PBXNativeTarget "weatherTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +451,7 @@
 				F4DBBC881B7B5811009C7505 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

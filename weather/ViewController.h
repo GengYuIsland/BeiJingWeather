@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WebGet.h"
+#import "DataService.h"
+#import "Model.h"
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController <UIPickerViewDelegate,UIPickerViewDataSource>
+{
+    Model *model;
+}
+@property (nonatomic) UIPickerView *cityPickerView;
+@property (nonatomic) NSMutableArray *modalArray;
 @end
 
